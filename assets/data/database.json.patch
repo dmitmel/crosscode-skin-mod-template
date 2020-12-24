@@ -1,0 +1,27 @@
+[
+  { "type": "INIT_KEY", "index": "playerSkins", "content": {} },
+  { "type": "ENTER", "index": "playerSkins" },
+  {
+    "type": "SET_KEY",
+    "index": "skin-mod-template",
+    "content": {
+      "id": "skin-mod-template",
+      "item": { "jsonINSTANCE": "customItem.skin-mod-template" },
+      "autoAdd": true,
+      "type": "Appearance",
+      "settings": {
+        "sheet": "player-skins.skin-mod-template",
+        "fx": "skins.skin-mod-template",
+        "gui": "skin-mod-template.png"
+      }
+    }
+  },
+  { "type": "EXIT" },
+
+  { "type": "ENTER", "index": ["toggle-sets", "skins", "items"] },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "jsonINSTANCE": "customItem.skin-mod-template" }
+  },
+  { "type": "EXIT", "count": 3 }
+]
