@@ -1,0 +1,9 @@
+{
+  "id": "skin-mod-template",
+  "version": "0.0.0",
+  "title": "Skip mod template",
+  "description": "Description of the mod",
+  "dependencies": {
+    "item-api": ">=0.2.0 <1.0.0"
+  }
+}
